@@ -107,6 +107,12 @@ $(".portfolio_item").each(function(i) {
   }, false);
 })();
 
+$(window).on("load", function () {
+
+	$(".loader_inner").fadeOut();
+	$(".loader").delay(400).fadeOut("slow");
+}); 
+
 var settings = {
 	//  set #id for validation email
 	 emailID: '#inputEmail',
