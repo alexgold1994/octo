@@ -85,7 +85,7 @@ $(".portfolio_item").each(function(i) {
 		$(this).find(".podrt_descr").attr("id", "work_" + i);
 	 });
 
-	 $(".main-mnu a").mPageScroll2id();
+	 $(".main-mnu a, .top").mPageScroll2id();
 	 
 });
 
