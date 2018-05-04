@@ -59,20 +59,16 @@ var mixer = mixitup('.container-mix_2', {
 	});
 
 	$('.popup_content').magnificPopup({
+		mainClass: 'my-mfp-zoom-in',
+		removalDelay: 300,
 		type: 'inline',
 		fixedContentPos: false,
 		midClick: true
+		
 		});
 
 		
-	$('.popup').magnificPopup({
-		type: 'image',
-		fixedContentPos: false,
-		zoom: {
-				enabled: true,
-				duration: 400 // продолжительность анимации. Не меняйте данный параметр также и в CSS
-		}
-		});
+
 
 	$("a[href='#callback']").magnificPopup({
 		mainClass: 'my-mfp-zoom-in',
@@ -80,9 +76,15 @@ var mixer = mixitup('.container-mix_2', {
 		type: 'inline',
 	});
 
+	
+
 $(".portfolio_item").each(function(i) {
 		$(this).find("a").attr("href", "#work_" + i);
 		$(this).find(".podrt_descr").attr("id", "work_" + i);
+	 });
+
+$(".modal-btn").each(function(i) {
+		$(this).find("a").attr("href", "#callback");
 	 });
 
 	 $(".main-mnu a, .top").mPageScroll2id();
@@ -94,6 +96,8 @@ $(".mouse-icon").click(function() {
 		scrollTop : $("#print").offset().top
 	}, 800);
 });
+
+
 
 (function() {
   'use strict';
