@@ -29,6 +29,7 @@ function addElement(e) {
 		return false;
 	});
 
+$('.parallax-window').parallax({imageSrc: '../img/octopus.jpg'});
 /*
 $(".portfolio_animate_row1").animated("fadeInUp");
 $(".portfolio_animate_row2").animated("fadeInUp");
