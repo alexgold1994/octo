@@ -88,7 +88,7 @@ $(".modal-btn").each(function(i) {
 		$(this).find("a").attr("href", "#callback");
 	 });
 
-	 $(".main-mnu a, .top").mPageScroll2id();
+	 $(".main-mnu a, .top").mPageScroll2id({ autoScrollSpeed: false });
 	 
 });
 
